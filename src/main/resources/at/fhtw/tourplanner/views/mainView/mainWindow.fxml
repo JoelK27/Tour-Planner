@@ -16,7 +16,7 @@
         <RowConstraints vgrow="NEVER"/>
         <RowConstraints minHeight="200.0" vgrow="SOMETIMES"/>
     </rowConstraints>
-    <Label text="Enter your target to greet:">
+    <Label text="Enter your target destination:">
         <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
         </GridPane.margin>

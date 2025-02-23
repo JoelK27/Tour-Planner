@@ -9,7 +9,7 @@ import java.beans.PropertyChangeSupport;
 public class MainViewModel {
     // http://openbook.rheinwerk-verlag.de/javainsel/12_004.html
     private final StringProperty input = new SimpleStringProperty("");
-    private final StringProperty output = new SimpleStringProperty("Hello VM!");
+    private final StringProperty output = new SimpleStringProperty("Enter a final destination!");
 
     private final PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 
@@ -25,7 +25,7 @@ public class MainViewModel {
 
     public void calculateOutputString() {
         System.out.println("VM: calculate Output");
-        this.output.set("Hello ".concat(this.input.get()).concat("!"));
+        this.output.set("Your destination: ".concat(this.input.get()));
         this.input.set("");
         this.propertyChangeSupport.firePropertyChange("RequiresPropertyChange", false, true);
     }
