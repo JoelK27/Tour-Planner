@@ -3,6 +3,7 @@ module helloworldfx {
     requires javafx.fxml;
     requires javafx.graphics;
     requires java.desktop;
+    requires java.sql;
 
     opens at.fhtw.tourplanner to javafx.graphics, javafx.fxml;
     exports at.fhtw.tourplanner;

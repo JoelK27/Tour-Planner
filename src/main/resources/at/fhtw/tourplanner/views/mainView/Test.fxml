@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Tour details">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="104.0" text="Tour Details" />
+                        <TextField text="Tour name">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextArea prefHeight="62.0" prefWidth="473.0" text="Tour Description">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <TextField text="From">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField text="To">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                         <ChoiceBox prefHeight="25.0" prefWidth="472.0" maxWidth="Infinity">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </ChoiceBox>
+                        <TextField text="Tour distance">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField text="estimated time">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                         <Label prefHeight="55.0" prefWidth="473.0" maxHeight="Infinity" maxWidth="Infinity" text="*Map Placeholder*" style="-fx-background-color: lightgray; -fx-alignment: center;">
+                             <VBox.margin>
+                                 <Insets top="5.0" bottom="5.0"/>
+
+                             </VBox.margin>
+                         </Label>
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="Tour logs">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <left>
+      <VBox prefHeight="375.0" prefWidth="127.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="24.0" prefWidth="39.0" text="Tours" />
+            <TextField prefHeight="25.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button minHeight="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="New Tour">
+               <VBox.margin>
+                  <Insets left="13.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
